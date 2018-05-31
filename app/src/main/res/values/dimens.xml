@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="headline_text_size">20sp</dimen>
+    <dimen name="header_text_size">16sp</dimen>
+    <dimen name="content_text_size">14sp</dimen>
+    <dimen name="secondary_text_size">12sp</dimen>
+
+    <dimen name="item_news_height">120dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="item_news_spacing">8dp</dimen>
+    <dimen name="tabs_height">36dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="favorite_button_height">40dp</dimen>
+    <dimen name="content_padding_bottom">80dp</dimen>
+</resources>

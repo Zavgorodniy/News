@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Новости</string>
+    <string name="facebook_app_id">573776286355299</string>
+
+    <string name="share">Поделиться</string>
+    <string name="preview_image">картинка для предпросмотра</string>
+    <string name="all_news">Все</string>
+    <string name="favorite_news">Избранные</string>
+    <string name="network_error">Проверьте свое интернет соединение</string>
+    <string name="api_error">Ошибка сервера</string>
+    <string name="db_error">Ошибка базы данных</string>
+    <string name="no_content">Список пуст</string>
+    <string name="share_message">Только свежие новости в нашем приложении. Powered by newsapi.org</string>
+    <string name="date_separator">в</string>
+    <string name="filter">Фильтр</string>
+    <string name="source">Источник</string>
+    <string name="date_from">Дата от</string>
+    <string name="date_to">Дата до</string>
+    <string name="all">Все</string>
+    <string name="incorrect_dates">Выбранные даты некорректны</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_news_height"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    tools:layout_margin="@dimen/activity_horizontal_margin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_news_preview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/preview_image"
+            tools:src="@drawable/no_image"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_news_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_news_spacing"
+                android:textSize="@dimen/header_text_size"
+                android:ellipsize="end"
+                android:lines="3"
+                tools:text="Iran sets end of May deadline to see EU measures to save nuclear deal"
+                />
+
+            <TextView
+                android:id="@+id/tv_news_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_news_spacing"
+                android:layout_marginTop="@dimen/item_news_spacing"
+                android:lines="1"
+                android:gravity="end"
+                android:textAlignment="viewEnd"
+                tools:text="by ABC news"
+                />
+
+            <TextView
+                android:id="@+id/tv_news_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_news_spacing"
+                android:lines="1"
+                android:gravity="end"
+                android:textAlignment="viewEnd"
+                android:textSize="@dimen/secondary_text_size"
+                tools:text="19 hours and 50 seconds ago"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

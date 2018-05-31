@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="facebook_app_id">573776286355299</string>
+
+    <string name="share">Share</string>
+    <string name="preview_image">preview image</string>
+    <string name="all_news">All</string>
+    <string name="favorite_news">Favorite</string>
+    <string name="network_error">Check your internet connection</string>
+    <string name="api_error">Api error</string>
+    <string name="db_error">Database error</string>
+    <string name="no_content">No content</string>
+    <string name="share_message">Only fresh news in our app. Powered by newsapi.org</string>
+    <string name="share_link">https://newsapi.org</string>
+    <string name="date_separator">at</string>
+    <string name="filter">Filter</string>
+    <string name="source">Source</string>
+    <string name="date_from">Date from</string>
+    <string name="date_to">Date to</string>
+    <string name="all">All</string>
+    <string name="incorrect_dates">Chosen dates are not correct</string>
+
+</resources>

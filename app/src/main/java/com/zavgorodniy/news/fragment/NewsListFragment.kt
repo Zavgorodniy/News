@@ -125,7 +125,7 @@ class NewsListFragment : Fragment(), SwipeRefreshLayout.OnRefreshListener {
             item.source?.name?.let { sources.add(it) }
         }
 
-        mActivity.refreshSources(sources)
+        mActivity.addSources(sources)
     }
 
     private fun onError(message: String) {
@@ -135,6 +135,8 @@ class NewsListFragment : Fragment(), SwipeRefreshLayout.OnRefreshListener {
 
     private fun getFromDb() {
         mNews = Utils.getFromDb()
+        mActivity.initSourceList()
+        setSourcesToActivity()
         showNews()
     }
 

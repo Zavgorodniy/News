@@ -40,7 +40,7 @@ class NewsListActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener
     var mDateTo: Calendar? = null
     private var mDateIsTo = false
 
-    private var mSources = ArrayList<String>()
+    var mSources = ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -175,18 +175,16 @@ class NewsListActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener
         mCallbackManager.onActivityResult(requestCode, resultCode, data)
     }
 
-    private fun initSourceList() {
+    fun initSourceList() {
         mSources.clear()
+        mFilterSource = resources.getString(R.string.all)
+        mSources.add(mFilterSource)
+
+        mSpinner?.setSelection(0)
         mSourcesAdapter?.notifyDataSetChanged()
     }
 
-    fun refreshSources(sources: Collection<String>) {
-        initSourceList()
-
-        mFilterSource = resources.getString(R.string.all)
-        mSpinner?.setSelection(0)
-
-        mSources.add(mFilterSource)
+    fun addSources(sources: Collection<String>) {
         mSources.addAll(sources)
         mSourcesAdapter?.notifyDataSetChanged()
     }
